@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Ekaterina Baidukova](https://up.htmlacademy.ru/htmlcss-individual/2/user/471547).
-* Наставник: `Анна Лисененкова`.
-* Ссылка на проект: (https://kate-baidukova.github.io/471547-sedona-2/).
+* Студент: [Екатерина Байдукова](https://up.htmlacademy.ru/htmlcss-individual/2/user/471547).
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/id85590).
+* Мой проект: [«Седона»](https://kate-baidukova.github.io/471547-sedona-2/).
 
 ---
 
