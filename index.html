@@ -2,11 +2,140 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона, главная страница</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header_logo" href="index.html">
+        <img class="header-logo_image" src="#" alt="Логотип сайта о городе Седона">
+      </a>
+      <nav class="page-header_nav main-nav">
+        <ul class="main-nav_list main-menu">
+          <li class="main-menu_item">
+            <a class="item_link" href="index.html">Главная</a>
+          </li>
+          <li class="main-menu_item">
+            <a class="item_link" href="#">О Седоне</a>
+          </li>
+          <li class="main-menu_item">
+            <a class="item_link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="user-nav_list">
+        <li class="user-nav_item">
+          <a class="user-nav_link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="user-nav_item">
+          <a class="user-nav_link" href="#">
+            <span class="visually-hidden">Число гостиниц в избранном</span>
+            <span class="likes-number">12</span>
+          </a>
+        </li>
+        <li class="user-nav_item">
+          <a class="user-nav_link button" href="#">ХОЧУ СЮДА!</a>
+        </li>
+      </ul>
+    </header>
+    <main class="main-index">
+      <section class="hero">
+        <h1 class="visually-hidden">Сайт об отдыхе в городе Седона</h1>
+        <img class="hero_image" src="#" alt="Виды окрестностей города Седона">
+      </section>
+      <section class="benefits">
+        <h2 class="visually-hidden">Преимущества отдыха в Седоне</h2>
+        <div class="benefits-intro_container">
+          <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+        <ul class="benefits_list">
+          <li class="benefits_item">
+            <h3 class="benefits-item_title">Настоящий городок</h3>
+            <p class="benefits-item_description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img class="benefits-item_image" src="#" alt="Будни города Седона">
+          </li>
+          <li class="benefits_item">
+            <h3 class="benefits-item_title">Небольшая площадь</h3>
+            <p class="benefits-item_description">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="benefits_item">
+            <h3 class="benefits-item_title">Красивая дорога</h3>
+            <p class="benefits-item_description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="benefits_item">
+            <h3 class="benefits-item_title">Мало туристов</h3>
+            <p class="benefits-item_description">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="benefits_item">
+            <h3 class="benefits-item_title">Там есть мост дьявола</h3>
+            <p class="benefits-item_description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img class="benefits-item_image" src="#" alt="Мост дьявола в Седоне">
+          </li>
+        </ul>
+      </section>
+      <section class="servise">
+        <div class="servise-intro_container">
+          <h2 class="visually-hidden">Услуги для туристов в городе Седона</h2>
+          <p class="servise-intro_subtitle">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <p class="servise-intro_description">Опытный персонал и качественное обслуживание!</p>
+        </div>
+        <ul class="servise_list">
+          <li class="servise_item">
+            <h3 class="servise-item_title">Жильё</h3>
+            <p class="servise-item_description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="servise_item">
+            <h3 class="servise-item_title">Еда</h3>
+            <p class="servise-item_description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="servise_item">
+            <h3 class="servise-item_title">Сувениры</h3>
+            <p class="servise-item_description">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <div class="search-content_container">
+          <p class="search_subtitle">Заинтересовались?</p>
+          <p class="search_description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <a class=" button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a> //здесь переход к каталогу?
+      </section>
+      <section class="subscribe">
+        <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
+        <p class="subscribe_description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subsribe_form" action="https://echo.htmlacademy.ru/" method="POST">
+          <label class="visually-hidden" for="email-form">Введите ваш email для подписки на рассылку</label>
+          <input type="email" name="email-form" id="email-form" placeholder="Ваш e-mail">
+          <button class="subscribe-form_button" type="submit"></button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <ul class="footer-social_list">
+        <li class="footer-social_item">
+          <a class="footer-social_link" href="#">
+            <span class="visually-hidden">Страница «ВКонтакте»</span>
+          </a>
+        </li>
+        <li class="footer-social_item">
+          <a class="footer-social_link" href="#">
+            <span class="visually-hidden">Канал в «Телеграме»</span>
+          </a>
+        </li>
+        <li class="footer-social_item">
+          <a class="footer-social_link" href="#">
+            <span class="visually-hidden">Канал на YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer-phone_link" href="#"></a>
+      <a class="footer-logo_link" href="#">
+        <span class="visually-hidden">Сайт разработан компанией HTML Academy</span>
+      </a>
+    </footer>
   </body>
 </html>
