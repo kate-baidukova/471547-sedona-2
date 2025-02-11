@@ -5,19 +5,19 @@
     <title>HTML Academy: Седона, главная страница</title>
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header_logo" href="index.html">
-        <img class="header-logo_image" src="#" alt="Логотип сайта о городе Седона">
+    <header class="header">
+      <a class="header-logo_link" href="index.html">
+        <img class="logo_image" src="#" alt="Логотип сайта об отдыхе в городе Седона: перевёрнутый треугольник со вставкой из видов местных достопримечательностей и надписью City of Sedona">
       </a>
-      <nav class="page-header_nav main-nav">
-        <ul class="main-nav_list main-menu">
-          <li class="main-menu_item">
+      <nav class="header_nav">
+        <ul class="main-nav_list">
+          <li class="main-nav_item">
             <a class="item_link" href="index.html">Главная</a>
           </li>
-          <li class="main-menu_item">
+          <li class="main-nav_item">
             <a class="item_link" href="#">О Седоне</a>
           </li>
-          <li class="main-menu_item">
+          <li class="main-nav_item">
             <a class="item_link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
@@ -39,22 +39,22 @@
         </li>
       </ul>
     </header>
-    <main class="main-index">
+    <main class="main">
       <section class="hero">
         <h1 class="visually-hidden">Сайт об отдыхе в городе Седона</h1>
         <img class="hero_image" src="#" alt="Виды окрестностей города Седона">
       </section>
       <section class="benefits">
-        <h2 class="visually-hidden">Преимущества отдыха в Седоне</h2>
+        <h2 class="visually-hidden">Зачем ехать на отдых в Седону</h2>
         <div class="benefits-intro_container">
-          <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <p class="benefits-intro_subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="benefits-intro_text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <ul class="benefits_list">
           <li class="benefits_item">
             <h3 class="benefits-item_title">Настоящий городок</h3>
             <p class="benefits-item_description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="benefits-item_image" src="#" alt="Будни города Седона">
+            <img class="benefits-item_image" src="#" alt="Здания на одной из улиц Седоны">
           </li>
           <li class="benefits_item">
             <h3 class="benefits-item_title">Небольшая площадь</h3>
@@ -71,7 +71,7 @@
           <li class="benefits_item">
             <h3 class="benefits-item_title">Там есть мост дьявола</h3>
             <p class="benefits-item_description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="benefits-item_image" src="#" alt="Мост дьявола в Седоне">
+            <img class="benefits-item_image" src="#" alt="Достопримечательность Мост дьявола в Седоне">
           </li>
         </ul>
       </section>
@@ -92,7 +92,7 @@
           </li>
           <li class="servise_item">
             <h3 class="servise-item_title">Сувениры</h3>
-            <p class="servise-item_description">Не только китайского, но и настоящего местного производства!</p>
+            <p class="servise-item_text">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -102,38 +102,38 @@
           <p class="search_subtitle">Заинтересовались?</p>
           <p class="search_description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
-        <a class=" button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a> //здесь переход к каталогу?
+        <a class="search_link button" href="#">Поиск гостиницы в Седоне</a> //здесь переход к каталогу?
       </section>
       <section class="subscribe">
         <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
         <p class="subscribe_description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subsribe_form" action="https://echo.htmlacademy.ru/" method="POST">
-          <label class="visually-hidden" for="email-form">Введите ваш email для подписки на рассылку</label>
-          <input type="email" name="email-form" id="email-form" placeholder="Ваш e-mail">
-          <button class="subscribe-form_button" type="submit"></button>
+          <label class="visually-hidden" for="email-form">Ваш e-mail</label>
+          <input type="email" name="email-form" id="email-form">
+          <button class="subscribe-form_button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer>
-      <ul class="footer-social_list">
-        <li class="footer-social_item">
-          <a class="footer-social_link" href="#">
+      <ul class="social_list">
+        <li class="social_item">
+          <a class="social_link" href="#">
             <span class="visually-hidden">Страница «ВКонтакте»</span>
           </a>
         </li>
-        <li class="footer-social_item">
-          <a class="footer-social_link" href="#">
+        <li class="social_item">
+          <a class="social_link" href="#">
             <span class="visually-hidden">Канал в «Телеграме»</span>
           </a>
         </li>
-        <li class="footer-social_item">
-          <a class="footer-social_link" href="#">
+        <li class="social_item">
+          <a class="social_link" href="#">
             <span class="visually-hidden">Канал на YouTube</span>
           </a>
         </li>
       </ul>
-      <a class="footer-phone_link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="footer-logo_link" href="https://htmlacademy.ru">
+      <a class="phone_link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="site-developer_link" href="https://htmlacademy.ru">
         <span class="visually-hidden">Сайт разработан компанией HTML Academy</span>
       </a>
     </footer>
