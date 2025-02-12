@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона, главная страница</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-test="header">
       <a class="header-logo_link" href="index.html">
         <img class="logo_image" src="#" alt="Логотип сайта об отдыхе в городе Седона: перевёрнутый треугольник со вставкой из видов местных достопримечательностей и надписью City of Sedona">
       </a>
@@ -39,12 +39,12 @@
         </li>
       </ul>
     </header>
-    <main class="main">
-      <section class="hero">
+    <main class="main" data-test="main">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Сайт об отдыхе в городе Седона</h1>
         <img class="hero_image" src="#" alt="Виды окрестностей города Седона">
       </section>
-      <section class="benefits">
+      <section class="benefits" data-test="advantages">
         <h2 class="visually-hidden">Зачем ехать на отдых в Седону</h2>
         <div class="benefits-intro_container">
           <p class="benefits-intro_subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -96,7 +96,7 @@
           </li>
         </ul>
       </section>
-      <section class="search">
+      <section class="search" data-test="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <div class="search-content_container">
           <p class="search_subtitle">Заинтересовались?</p>
@@ -104,7 +104,7 @@
         </div>
         <a class="search_link button" href="#">Поиск гостиницы в Седоне</a> //здесь переход к каталогу?
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
         <p class="subscribe_description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subsribe_form" action="https://echo.htmlacademy.ru/" method="POST">
@@ -114,7 +114,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <ul class="social_list">
         <li class="social_item">
           <a class="social_link" href="#" target="_blank">
