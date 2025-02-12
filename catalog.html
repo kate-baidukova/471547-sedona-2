@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона, каталог</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header" data-test="header">
     <a class="header-logo_link" href="index.html">
       <img class="logo_image" src="#" alt="Логотип сайта об отдыхе в городе Седона: перевёрнутый треугольник со вставкой из видов местных достопримечательностей и надписью City of Sedona">
     </a>
@@ -40,8 +40,8 @@
       </li>
     </ul>
   </header>
-  <main class="main">
-    <section class="filters-group">
+  <main class="main" data-test="main">
+    <section class="filters-group" data-test="filter">
       <h1 class="visually-hidden">Гостиницы Седоны</h1>
       <ul class="breadcrumps_list">
         <li class="breadcrumps_item">
@@ -117,7 +117,7 @@
         </div>
       </form>
     </section>
-    <section class="search-results">
+    <section class="search-results" data-test="catalog">
       <h2 class="visually-hidden">Гостиницы Седоны: результаты поиска</h2>
       <p class="searched-cards">Найдено гостиниц: <span class="cards-number">38</span></p>
       <select class="sorting" name="select-control">
@@ -221,7 +221,7 @@
         </li>
       </ul>
     </section>
-    <section class="subscribe">
+    <section class="subscribe" data-test="subscribe">
       <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
       <p class="subscribe_description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subsribe_form" action="https://echo.htmlacademy.ru/" method="POST">
@@ -231,7 +231,7 @@
       </form>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <ul class="social_list">
       <li class="social_item">
         <a class="social_link" href="#" target="_blank">
