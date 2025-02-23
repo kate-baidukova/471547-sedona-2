@@ -1,0 +1,510 @@
+@font-face {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+/*Общие*/
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 118%;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+.content-container {
+  background-color: #ffffff;
+}
+
+.main-title_text {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 130%;
+}
+
+.subtitle_text {
+  font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.description_text {
+  font-size: 22px;
+}
+
+/*Хедер*/
+
+.header {
+  color: #000000;
+}
+
+.header-logo_link {
+  display: block;
+  width: 140px;
+  height: 70px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.main-nav_item {
+  list-style-type: none;
+}
+
+.item_link {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #000000;
+  cursor: pointer;
+}
+
+.user-nav_link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.user-nav_list .user-nav_item {
+  min-width: 20px;
+  min-height: 20px;
+  list-style-type: none;
+}
+
+.user-nav_search::before,
+.user-nav_favorites::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+}
+
+.user-nav_search::before {
+  mask-image: url("../images/icons/search.svg");
+  mask-repeat: no-repeat;
+}
+
+.user-nav_favorites::before {
+  mask-image: url("../images/icons/favorites.svg");
+  mask-repeat: no-repeat;
+}
+
+.button {
+  display: block;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+}
+/*Блок-приветствие*/
+
+.hero {
+  background-color: #82B3D3;
+  color: #ffffff;
+  background-image: url("../images/hero-triangles.svg"), url("../images/index/hero.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom;
+  background-size: 100%, cover;
+}
+
+.hero_image {
+  display: block;
+  margin: 0 auto;
+}
+
+/*Блок с преимуществами отдыха в Седоне*/
+
+.benefits_item {
+  font-weight: 400;
+  font-size: 18px;
+  list-style-type: none;
+}
+
+.benefits_item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.benefits_item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);;
+}
+
+.benefits_item:nth-child(2n+1) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.benefits_list .benefits-special {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.benefits-special img {
+  display: block;
+}
+
+/*Блок с сервисом*/
+
+.servise_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.servise_list h3::before {
+  content: "";
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.servise-item_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.servise_item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.servise_item:nth-child(1) h3::before {
+  background-image: url("../images/icons/servise-house.svg");
+  width: 74px;
+  height: 70px;
+}
+
+.servise_item:nth-child(2) h3::before {
+  background-image: url("../images/icons/servise-food.svg");
+  width: 64px;
+  height: 76px;
+}
+
+.servise_item:nth-child(3) h3::before {
+  background-image: url("../images/icons/servise-gift.svg");
+  width: 75px;
+  height: 72px;
+}
+
+/*Блок с поиском гостиницы*/
+
+.search_link {
+  font-size: 20px;
+  line-height: 180%;
+}
+
+/*Блок с подпиской на рассылку*/
+
+.subscribe {
+  color: #000000;
+}
+
+.subscribe-special {
+  background-color: #82B3D3;
+  background-image: url("../images/subscribe-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.subscribe-special h2 {
+  color: #ffffff;
+}
+
+.subscribe-special p {
+  color: #ffffff;
+}
+
+.subscribe_form label {
+  color: #000000;
+  line-height: 133%;
+}
+
+.subscribe_form input {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.subscribe-form_button {
+  font-size: 20px;
+  line-height: 180%;
+  background-color: #82b3d3;
+}
+
+/*Футер*/
+
+.social_item {
+  list-style-type: none;
+}
+
+.social_link {
+  display: block;
+  width: 25px;
+  height: 15px;
+}
+
+.social-vk {
+  background-image: url("../images/icons/socials/vk.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.social-telegram {
+  background-image: url("../images/icons/socials/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: 0%;
+}
+.social-youtube {
+  background-image: url("../images/icons/socials/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 0%;
+}
+
+.phone_link {
+  display: block;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.site-developer_link {
+  display: block;
+  width: 115px;
+  height: 33px;
+  background-image: url("../images/logos/html-academy.svg");
+  background-repeat: no-repeat;
+  background-position: 0%;
+}
+
+/*Каталог — catalog.html*/
+
+.filters-group {
+  background-image: url("../images/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+/*Хлебные крошки*/
+
+.breadcrumps_list {
+  list-style: none;
+}
+
+.breadcrumps_link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  font-style: 16px;
+  line-height: 131%;
+}
+
+.breadcrumps_item:first-child {
+  background-image: url("../images/icons/home.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 12px;
+  min-height: 12px;
+}
+
+.breadcrumps_item::after {
+  content: "";
+  display: block;
+  background-image: url("../images/icons/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 8px;
+  min-height: 11px;
+}
+
+.breadcrumps_item:last-child::after {
+  content: none;
+}
+
+
+/*Блок с фильтрами*/
+
+.filters {
+  border: none;
+}
+
+.filters_list {
+  list-style: none;
+}
+
+.filters_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.filters_title::first-letter {
+  text-transform: uppercase;
+}
+
+.filters_item {
+  line-height: 128%;
+}
+
+.cost-filter_block input {
+  font-weight: 700;
+  line-height: 133%;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.cost-filter_block label {
+  line-height: 133%;
+  color: #000000;
+}
+
+.filters_button {
+  background-color: #82b3d3;
+}
+
+.reset-button {
+  background-color: transparent;
+}
+
+/*Сортировка*/
+
+.sorting {
+  width: 292px;
+  height: 49px;
+  appearance:none;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+/*добавить блочки с отображением результатов поиска: плиткой, списком, карта целиком*/
+
+/*Блок с результатами поиска*/
+
+.cards_list {
+  list-style: none;
+}
+
+.item-title_link {
+  text-decoration: none;
+}
+
+.item_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+  color:#000000;
+}
+
+.item_image {
+  display: block;
+}
+
+.item-rating {
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.stars {
+  height: 18px;
+  background-image: url(../images/icons/star.svg);
+  background-position: 0 center;
+  background-size: 18px auto;
+}
+
+.one-star {
+  width: 18px;
+}
+
+.two-stars {
+  width: 36px;
+}
+
+.three-stars {
+  width: 54px;
+}
+
+.four-stars {
+  width: 72px;
+}
+
+.item-rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.item-favorites_button {
+  background-color: #82b3d3;
+}
+
+/*Пагинация*/
+
+.pagination_list {
+  list-style: none;
+}
+
+.pagination_link {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 180%;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
+
+.pagination-current_link {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination_separator {
+  color: #000000;
+  background-color: transparent;
+}
