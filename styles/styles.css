@@ -66,8 +66,8 @@ body {
   overflow: hidden;
 }
 
-.main-nav_item {
-  list-style-type: none;
+.main-nav_list {
+  list-style: none;
 }
 
 .item_link {
@@ -132,9 +132,9 @@ body {
   background-color: #82B3D3;
   color: #ffffff;
   background-image: url("../images/hero-triangles.svg"), url("../images/index/hero.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom;
-  background-size: 100%, cover;
+  background-repeat: no-repeat;
+  background-position: center bottom, center;
+  background-size: 100% auto, cover;
 }
 
 .hero_image {
@@ -254,6 +254,7 @@ body {
 }
 
 .subscribe_form input {
+  font-family: inherit;
   background-color: #f2f2f2;
   border: none;
 }
@@ -383,7 +384,12 @@ body {
   line-height: 128%;
 }
 
+.cost-filter_block label {
+  text-transform: lowercase;
+}
+
 .cost-filter_block input {
+  font-family: inherit;
   font-weight: 700;
   line-height: 133%;
   color: #000000;
