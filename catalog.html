@@ -10,7 +10,7 @@
     <div class="content-container">
       <header class="header" data-test="header">
         <a class="header-logo-link" href="index.html">
-          <img class="logo-image" src="images/logos/sedona.svg" alt="Логотип сайта об отдыхе в городе Седона: перевёрнутый треугольник голубого цвета со вставкой с изображением местных достопримечательностей и надписью City of Sedona" width="138" height="64">
+          <img class="logo-image" src="images/logos/sedona.svg" alt="Логотип сайта об отдыхе в городе Седона: перевёрнутый треугольник голубого цвета со вставкой с изображением местных достопримечательностей и надписью City of Sedona" width="140" height="70">
         </a>
         <nav class="header-nav">
           <ul class="main-nav-list">
@@ -116,22 +116,24 @@
           </section>
         </div>
         <section class="search-results" data-test="catalog">
-          <h2 class="searched-cards subtitle-text">Найдено гостиниц: <span class="cards-number">38</span></h2>
-          <select class="sorting" name="select-control">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
-          <div class="cards-view-buttons-group">
-            <a href="catalog.html?view=tile">
-              <span class="visually-hidden">Отобразить карточки отелей плиткой</span>
-            </a>
-            <a href="catalog.html?view=card">
-              <span class="visually-hidden">Отображать карточки отелей по одной</span>
-            </a>
-            <a href="catalog.html?view=list">
-              <span class="visually-hidden">Отобразить отели списком</span>
-            </a>
+          <div class="sorting-common">
+            <h2 class="searched-cards subtitle-text">Найдено гостиниц: <span class="cards-number">38</span></h2>
+            <select class="sorting" name="select-control">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+            <div class="cards-view-buttons-group">
+              <a href="catalog.html?view=tile">
+                <span class="visually-hidden">Отобразить карточки отелей плиткой</span>
+              </a>
+              <a href="catalog.html?view=card">
+                <span class="visually-hidden">Отображать карточки отелей по одной</span>
+              </a>
+              <a href="catalog.html?view=list">
+                <span class="visually-hidden">Отобразить отели списком</span>
+              </a>
+            </div>
           </div>
           <ul class="cards-list">
             <li class="cards-item">
@@ -221,8 +223,10 @@
           </ul>
         </section>
         <section class="subscribe" data-test="subscribe">
-          <h2 class="subscribe-title subtitle-text">Подпишитесь на&nbsp;рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
+          <div class="content-wrapper">
+            <h2 class="subscribe-title subtitle-text">Подпишитесь на&nbsp;рассылку</h2>
+            <p class="subscribe-description">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
+          </div>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="email-form">Ваш e-mail</label>
             <input type="email" name="email-form" id="email-form" placeholder="yourmail@mail.com" required>
