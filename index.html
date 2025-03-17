@@ -13,8 +13,8 @@
         </a>
         <nav class="header-nav">
           <ul class="main-nav-list">
-            <li class="main-nav_item">
-              <a class="item-link" href="index.html" aria-current="page">Главная</a>
+            <li class="main-nav-item">
+              <a class="item-link item-link-current" href="index.html" aria-current="page">Главная</a>
             </li>
             <li class="main-nav-item">
               <a class="item-link" href="#">О Седоне</a>
@@ -47,20 +47,19 @@
           <img class="hero-image" src="images/hero-text.svg" alt="Приветственный текст для гостей города Седона: Welcome to the gorgeous Sedona because the Grand Canyon sucks!" width="458" height="352">
         </section>
         <section class="benefits" data-test="advantages">
-          <h2 class="visually-hidden subtitle-text">Зачем ехать на&nbsp;отдых в&nbsp;Седону</h2>
-          <div class="benefits-intro-container">
-            <div class="content-wrapper">
-              <p class="benefits-intro-subtitle subtitle-text">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</p>
-              <p class="benefits-intro-text">Рассмотрим причины, по&nbsp;которым Седона круче, чем Гранд-Каньон!</p>
-            </div>
+          <div class="benefits-intro-container content-wrapper">
+            <h2 class="benefits-intro-subtitle subtitle-text">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h2>
+            <p class="benefits-intro-text">Рассмотрим причины, по&nbsp;которым Седона круче, чем Гранд-Каньон!</p>
           </div>
           <ul class="benefits-list">
             <li class="benefits-item benefits-special">
-              <h3 class="benefits-item-title">Настоящий городок</h3>
-              <p class="benefits-item-description">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="benefits-item-content">
+                <h3 class="benefits-item-title">Настоящий городок</h3>
+                <p class="benefits-item-description">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
               <img class="benefits-item-image" src="images/benefits-1.jpg" alt="Здания на одной из улиц Седоны" width="800" height="385">
             </li>
-            <li class="benefits-item">
+            <li class="benefits-item benefits-item-content">
               <h3 class="benefits-item-title">Небольшая площадь</h3>
               <p class="benefits-item-description">Все достопримечательности находятся очень близко</p>
             </li>
@@ -68,52 +67,43 @@
               <h3 class="benefits-item-title">Красивая дорога</h3>
               <p class="benefits-item-description">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
             </li>
-            <li class="benefits-item">
+            <li class="benefits-item benefits-item-content">
               <h3 class="benefits-item-title">Мало туристов</h3>
               <p class="benefits-item-description">Большинство едет в&nbsp;Гранд-Каньон и&nbsp;толпится там</p>
             </li>
             <li class="benefits-item benefits-special">
-              <h3 class="benefits-item-title">Там есть Мост дьявола</h3>
-              <p class="benefits-item-description">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, разумеется</p>
+              <div class="benefits-item-content">
+                <h3 class="benefits-item-title">Там есть Мост дьявола</h3>
+                <p class="benefits-item-description">Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, разумеется</p>
+              </div>
               <img class="benefits-item-image" src="images/benefits-2.jpg" alt="Достопримечательность Мост дьявола в Седоне" width="800" height="385">
             </li>
           </ul>
         </section>
         <section class="service">
-          <div class="service-intro-container">
-            <div class="content-wrapper">
-              <h2 class="visually-hidden subtitle-text">Услуги для туристов в&nbsp;городе Седона</h2>
-              <p class="service-intro-subtitle subtitle-text">Приезжайте в&nbsp;Седону отдохнуть в&nbsp;комфорте и&nbsp;уюте!</p>
+          <div class="service-intro-container content-wrapper">
+              <h2 class="service-intro-subtitle subtitle-text">Приезжайте в&nbsp;Седону отдохнуть в&nbsp;комфорте и&nbsp;уюте!</h2>
               <p class="service-intro-description">Опытный персонал и&nbsp;качественное обслуживание!</p>
-            </div>
           </div>
           <ul class="service-list">
             <li class="service-item">
-              <div class="content-item-wrapper">
                 <h3 class="service-item-title">Жильё</h3>
                 <p class="service-item-description">Рекомендуем пожить в&nbsp;настоящем мотеле: всё как в&nbsp;кино!</p>
-              </div>
             </li>
             <li class="service-item">
-              <div class="content-item-wrapper">
                 <h3 class="service-item-title">Еда</h3>
                 <p class="service-item-description">Всегда заказывайте топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
-              </div>
             </li>
             <li class="service-item">
-              <div class="content-item-wrapper">
                 <h3 class="service-item-title">Сувениры</h3>
                 <p class="service-item-text">Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
-              </div>
             </li>
           </ul>
         </section>
-        <section class="search" data-test="search">
-          <div class="content-wrapper">
+        <section class="search content-wrapper" data-test="search">
             <h2 class="search-subtitle subtitle-text">Заинтересовались?</h2>
             <p class="search-description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
             <a class="search-link button" href="#">Поиск гостиницы в&nbsp;Седоне</a>
-          </div>
         </section>
         <section class="subscribe subscribe-special" data-test="subscribe">
           <div class="content-wrapper">
